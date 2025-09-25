@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ClinicaVeterinaria","l":"Animal"},{"p":"ClinicaVeterinaria","l":"App"},{"p":"ClinicaVeterinaria","l":"Atendimento"},{"p":"ClinicaVeterinaria","l":"Procedimento"},{"p":"ClinicaVeterinaria","l":"Tutor"},{"p":"ClinicaVeterinaria","l":"Veterinario"}];updateSearchResults();
