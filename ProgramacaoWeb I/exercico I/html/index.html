@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício HTML – parte 1</title>
+
+    <link rel="stylesheet" href="../css/style.css"> <!-- ../ volta uma pasta  -->
+</head>
+
+<body>
+
+    <header>Página Principal</header>
+
+    <nav> <!-- usada para área de navegação do site -->
+        <ul class="menu"> <!-- cria uma lista de pontinhos -->
+            <li>Item 1</li>
+            <li><a href="pagina2.html">Item 2</a></li>
+            <li><a href="pagina3.html">Item 3</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <audio id="player">
+            <source src="../audio/audio.mp3">
+        </audio>
+
+        <button onclick="document.getElementById('player').play()">Play</button>
+        <button onclick="document.getElementById('player').pause()">Pause</button>
+    </div>
+
+    <br>
+
+    <table>
+    <!-- Linha 1 -->
+    <tr> <!-- linha -->
+        <td></td> <!-- célula -->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td rowspan="3"></td> <!-- ocupa linhas -->
+    </tr>
+
+    <!-- Linha 2 -->
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="3"></td> <!-- ocupa colunas -->
+    </tr>
+
+    <!-- Linha 3 -->
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+    <!-- Linha 4 -->
+    <tr>
+        <td rowspan="2"></td>
+        <td colspan="4"></td>
+    </tr>
+
+</body>
+
+</html>

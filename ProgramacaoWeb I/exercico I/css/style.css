@@ -1,0 +1,100 @@
+header {
+    width: 100%; /* largura */
+    font-size: larger; /* tamanho */
+    color: lightblue;
+}
+
+.menu {
+    /* remove estilo padrão da lista */
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    /* deixa lado a lado */
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    padding: 5px 10px;  /* espaço interno */
+    font-size: 15px;
+    background-color: lightblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* muda cursor ao passar */
+}
+
+table {
+    border-collapse: collapse; /* bordas sem espaçamento entre elas */
+}
+
+td {
+    width: 60px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+.formulario {
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 15px;
+    width: 300px;
+}
+
+.formulario button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* primeiro item */
+.comidas li:first-child {
+    font-size: 2em;
+}
+
+/* último item */
+.comidas li:last-child {
+    font-size: 0.8em;
+}
+
+.comidas {
+     list-style: none;
+    padding: 0;
+}
+
+.caixa {
+    background-color: lightgray;
+    padding: 5px;
+    width: 180px;
+    transition: 0.3s; /* tempo de mudança de cor */
+    text-align: center;
+}
+
+.caixa:hover {
+    background-color: lightblue;
+}
+
+.tabela-js {
+    border-collapse: collapse;
+}
+
+.tabela-js td {
+    width: 60px;
+    height: 40px;
+    border: 1px solid black;
+}
+
+/* só essa tabela */
+.tabela-js tr:nth-child(odd) {
+    background-color: silver;
+}
