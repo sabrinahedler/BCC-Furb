@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Aqua</title>
+
+    <!-- 'linkando' css e javascript a página html-->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../img/logoSite.png" alt="logo">
+            </a>
+        </div>
+        <div id="areaUsuario" class="areaUsuario">
+            <span>Carregando...</span>
+        </div>
+    </header>
+
+    <!-- barra de menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="formulario">
+            <h2>Cadastro de Usuário</h2>
+
+            <!-- opção de troca de tema -->
+            <div class="grupoForm">
+                <label>Estilo da Página:</label>
+                <input type="radio" name="theme" value="default" checked required> Padrão
+                <input type="radio" name="theme" value="custom" required> Customizado
+            </div>
+
+            <!-- mensagem de sucesso (escondida por padrão) -->
+            <div id="mensagem-sucesso">
+                <h3 id="texto-sucesso"></h3>
+                <img id="imagem-peixe-sucesso" src="" alt="Peixe Favorito">
+                <button onclick="window.location.href='index.html'">Voltar para o Início</button>
+            </div>
+
+            <form id="cadastro">
+                <!-- campo 1 -->
+                <div class="grupoForm">
+                    <label for="nome_completo">Nome Completo</label>
+                    <input type="text" id="nome_completo" name="nome_completo" placeholder="Informe seu nome completo..." required>
+                </div>
+
+                <!-- campo 2 -->
+                <div class="grupoForm">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Informe seu e-mail..." required>
+                </div>
+
+                <!-- campo 3 -->
+                <div class="grupoForm">
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+                </div>
+
+                <!-- campo 4 -->
+                <div class="grupoForm">
+                    <label for="tipo_pet">Peixe favorito</label>
+                    <select id="tipo_pet" name="tipo_pet" required>
+                        <option value="" disabled selected>Selecione seu peixe...</option>
+                        <option value="betta">Betta</option>
+                        <option value="peixe-bolha">Peixe-Bolha</option>
+                        <option value="peixe-caixa">Peixe-Caixa</option>
+                        <option value="pirarucu">Pirarucu</option>
+                    </select>
+                </div>
+
+                <!-- campo 5 -->
+                <div class="grupoForm">
+                    <label>Receber Novidades por E-mail?</label>
+                    <input type="radio" name="news" value="sim" required> Sim
+                    <input type="radio" name="news" value="nao" required> Não
+                </div>
+
+                <!-- campo 6 -->
+                <div class="grupoForm">
+                    <label>
+                        <input type="checkbox" name="termos" style="width: auto;" required> Aceito os termos e condições
+                    </label>
+                </div>
+
+                <!-- botão de enviar -->
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- rodapé -->
+    <footer>
+        <p>Trabalho realizado pelas alunas Sabrina Hedler e Larissa Vargas</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aqua</title>
+
+    <!-- 'linkando' css e javascript a página html-->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- cabeçalho -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../img/logoSite.png" alt="logo">
+            </a>
+        </div>
+        <div id="areaUsuario" class="areaUsuario">
+            <span>Carregando...</span>
+        </div>
+    </header>
+
+    <!-- barra de menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li>
+                <a href="#">Serviços</a>
+                <ul>
+                    <li><a href="#">Adoção</a></li>
+                    <li><a href="#">Apoie-se</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="formulario">
+            <h2>Autenticação</h2>
+            <form id="login-form">
+                <div class="grupoForm">
+                    <label for="login">Login</label>
+                    <input type="text" id="login" name="login" placeholder="Informe seu login..." required>
+                </div>
+                <div class="grupoForm">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Informe sua senha..." required>
+                </div>
+                <!-- botão autenticar -->
+                <button type="submit">Autenticar</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- rodapé -->
+    <footer>
+        <p>Trabalho realizado pelas alunas Sabrina Hedler e Larissa Vargas</p>
+    </footer>
+</body>
+
+</html>
