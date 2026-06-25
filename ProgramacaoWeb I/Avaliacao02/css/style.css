@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f0e6ff 0%, #e6d9f5 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #4a148c;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(74, 20, 140, 0.3);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    background-color: #7c3aed;
+    transform: translateY(-2px);
+}
+
+.navbar a.active {
+    background-color: #7c3aed;
+    box-shadow: 0 4px 8px rgba(124, 58, 237, 0.4);
+}
+
+.content {
+    flex: 1;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.home-section {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(74, 20, 140, 0.15);
+    text-align: center;
+    border-left: 6px solid #7c3aed;
+}
+
+.home-section h2 {
+    color: #4a148c;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.home-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.funcionarios-section {
+    width: 100%;
+}
+
+.funcionarios-section h2 {
+    color: #4a148c;
+    margin-bottom: 35px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(74, 20, 140, 0.15);
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-top: 4px solid #7c3aed;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(74, 20, 140, 0.25);
+    border-top-color: #e0b0ff;
+}
+
+.card-foto {
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(135deg, #4a148c 0%, #7c3aed 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.card-foto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-nome {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a148c;
+    margin-bottom: 12px;
+}
+
+.card-propriedades {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    background-color: #f8f4ff;
+    padding: 10px;
+    border-radius: 6px;
+    border-left: 3px solid #7c3aed;
+}
+
+.card-propriedades strong {
+    display: block;
+    color: #4a148c;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.card-email {
+    font-size: 12px;
+    word-break: break-word;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.card-email a {
+    color: #7c3aed;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.card-email a:hover {
+    color: #4a148c;
+    text-decoration: underline;
+    text-shadow: 0 0 8px rgba(124, 58, 237, 0.3);
+}
+
+.footer {
+    background-color: #4a148c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    box-shadow: 0 -4px 10px rgba(74, 20, 140, 0.3);
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .navbar a {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .home-section h2 {
+        font-size: 22px;
+    }
+
+    .funcionarios-section h2 {
+        font-size: 22px;
+    }
+}
